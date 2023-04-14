@@ -188,7 +188,7 @@ figure figcaption {
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(-170%, -50%); 
+    transform: translate(-180%, -50%); 
 }
 .img2 img {
     width: 250px;
@@ -197,7 +197,7 @@ figure figcaption {
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(-20%, -130%);  
+    transform: translate(-15%, -130%);  
 }
 .img3 img {
     width: 160px;
