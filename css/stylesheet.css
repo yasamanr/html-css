@@ -5,7 +5,6 @@
     --bek-color: rgb(181, 181, 195);
     --font-color: black;
 
-    --bodytext: ;
 
     --p-sides: 0.5rem;
     --p-top: 0.5rem;
@@ -66,7 +65,7 @@ ul.menu li a{
     padding: 5px;
     color: rgb(194, 15, 90);
     text-decoration: none;
-    font-size: var(--bodytext);
+    font-size: 1rem;
     font-weight: bold;
     float: left; 
 }
@@ -78,23 +77,21 @@ ul.menu li a:hover{
     padding-right: 5%;
 }
 /*end navbar*/
-div.ro-2>div>p {
+.p-h {
     color: var(--secondary-color);
     text-align: center;
-    font-size: 2rem;
+    
     padding-top: var(--p-top);
 }
 /*grid*/
 .g-container {
     display: grid;
-    grid-template-columns: repeat(4,1fr) ;
-    grid-template-rows: auto;
-    gap: 1rem;
-    padding: var(--p-top) var(--p-sides) 0 var(--p-sides);
-    margin-left: 5%;
-    margin-right: 5%;
+    grid-template-columns: repeat(4,22vw) ;
+    grid-template-rows: 35vw;
+    gap: 0.5rem;
+    margin: 2%;
     text-align: center;
-    margin-bottom: 4rem;
+    align-items: center;
 }
 .gi-1 {
     grid-column-start: 1;
@@ -121,7 +118,7 @@ div.ro-2>div>p {
     grid-row-end: 2; 
 }
 .g-container img {
-    width: 3rem;
+    width: 50%;
     height: var(--img-height);
     padding: 0.5rem;
     border: 0.1rem solid var(--secondary-color);
@@ -137,17 +134,64 @@ div.ro-2>div>p {
     padding: var(--p-top) var(--p-sides) var(--p-bottom) var(--p-sides);
     box-shadow: 0 4px 8px 3px rgb(117, 117, 117);
     width: 100%;
+    height: 100%;
 }
 figure p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-top: var(--p-top);
+    padding-left: 1%;
+    padding-right: 1%;
     text-align: center;
     font-style: italic;
 }
 figure figcaption {
     color: var(--secondary-color);
     font-size: 0.9rem;
+    padding-left: 1%;
+    padding-right: 1%;
 }
-.flex {
-    margin-top: 0;
+.box {
+    width: 50%;
+    background: rgb(255, 255, 255);
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 10%);
+    
+    padding: 3%;
+    border-radius: 4px;
+    
+    
+}
+.bt {
+ background-color: rgb(194, 15, 90);
+ color: white;
+ font-size: 0.5rem;
+ border: none;
+ border-radius: 20%;
+ padding: 1%;
+ margin-left: 2%;
+ width: 20%;
+ height: 50%;
+}
+.pbox1 {
+   
+    color: var(--secondary-color);
+}
+.pbox2 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    }
+.img1 img {
+    float: left;
+    width: 200px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    top: 40%;
+    left:50%;
+    position: relative;
+    transform: translate(-35%, -80%);
+   
 }
