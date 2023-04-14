@@ -7,9 +7,9 @@
 
     --bodytext: ;
 
-    --p-sides: 1rem;
-    --p-top: 1rem;
-    --p-bottom: 1rem;
+    --p-sides: 0.5rem;
+    --p-top: 0.5rem;
+    --p-bottom: 0.5rem;
 
     --img-width: 100%;
     --img-height: 100%;
@@ -41,14 +41,18 @@ body {
     color:var(--font-color);
 }
 /*nav-bar*/
+.m-nav {
+    padding-top: var(--p-top);
+}
 div.nav-width {
     width: 100%;
+    height: 22rem;
 }
 .nav-width {
     background-image: url(../img/jayden-chong-DFqa4Fq5LNE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30rem;
+    background-position: center;
 }
 .navbar-link {
 float: left;
@@ -60,7 +64,7 @@ ul.menu li{
 ul.menu li a{
     display:flex;
     padding: 5px;
-    color: rgb(151, 52, 52);
+    color: rgb(194, 15, 90);
     text-decoration: none;
     font-size: var(--bodytext);
     font-weight: bold;
@@ -77,7 +81,7 @@ ul.menu li a:hover{
 .ro-2 div>p {
     color: var(--secondary-color);
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding-top: var(--p-top);
 }
 /*grid*/
@@ -135,6 +139,7 @@ ul.menu li a:hover{
 figure p {
     font-size: 0.8rem;
     padding-top: var(--p-top);
+    text-align: center;
 }
 figure figcaption {
     color: var(--secondary-color);
