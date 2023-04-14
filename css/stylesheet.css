@@ -89,7 +89,6 @@ ul.menu li a:hover{
     grid-template-columns: repeat(4,22vw) ;
     grid-template-rows: 35vw;
     gap: 0.5rem;
-    margin: 2%;
     text-align: center;
     align-items: center;
 }
@@ -127,14 +126,14 @@ ul.menu li a:hover{
 }
 .ro-2 {
     background-color: var(--primary-color);
+    padding-left: 3.5%;
+    
 }
 .bg-item {
     background-color: white;
     border-top: 0.2rem solid var(--secondary-color);
     padding: var(--p-top) var(--p-sides) var(--p-bottom) var(--p-sides);
     box-shadow: 0 4px 8px 3px rgb(117, 117, 117);
-    width: 100%;
-    height: 100%;
 }
 figure p {
     font-size: 0.7rem;
@@ -152,26 +151,26 @@ figure figcaption {
 }
 .box {
     width: 50%;
+    height: 180px;
     background: rgb(255, 255, 255);
     left: 50%;
     position: relative;
     transform: translate(-50%, 10%);
-    
-    padding: 3%;
-    border-radius: 4px;
-    
-    
+    z-index: 1;
+    padding: 1%;
+    border-radius: 4px;  
+    margin-top: 2rem;
 }
 .bt {
  background-color: rgb(194, 15, 90);
  color: white;
  font-size: 0.5rem;
  border: none;
- border-radius: 20%;
- padding: 1%;
+ border-radius: 20px;
  margin-left: 2%;
- width: 20%;
- height: 50%;
+ width: 30%;
+ padding: 3px;
+
 }
 .pbox1 {
    
@@ -181,17 +180,40 @@ figure figcaption {
     font-size: 0.8rem;
     font-weight: bold;
 }
-.flex{
-    display: flex;
-    }
 .img1 img {
-    float: left;
-    width: 200px;
-    height: 250px;
+    
+    width: 130px;
+    height: 170px;
     background: rgb(255, 255, 255);
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(-35%, -80%);
-   
+    transform: translate(-170%, -50%); 
+}
+.img2 img {
+    width: 250px;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    top: 40%;
+    left:50%;
+    position: relative;
+    transform: translate(-20%, -130%);  
+}
+.img3 img {
+    width: 160px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    top: 40%;
+    left:50%;
+    position: relative;
+    transform: translate(-70%, -220%);  
+}
+.img4 img {
+    width: 180px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    top: 40%;
+    left:50%;
+    position: relative;
+    transform: translate(10%, -270%);  
 }
