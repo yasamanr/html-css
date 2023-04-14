@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(187, 187, 206);
-    --secondary-color: rgb(42, 109, 94);
+    --primary-color: #cccfd8;
+    --secondary-color: rgb(79, 124, 118);
 
     --bek-color: rgb(181, 181, 195);
     --font-color: black;
@@ -74,6 +74,12 @@ ul.menu li a:hover{
     padding-right: 5%;
 }
 /*end navbar*/
+.ro-2 div>p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: var(--p-top);
+}
 /*grid*/
 .g-container {
     display: grid;
@@ -110,12 +116,11 @@ ul.menu li a:hover{
     grid-row-end: 2; 
 }
 .g-container img {
-    width: 40%;
+    width: 3rem;
     height: var(--img-height);
-    
-    padding: 0.4rem;
+    padding: 0.5rem;
     border: 0.1rem solid var(--secondary-color);
-    border-radius: 100%;
+    border-radius: 50%;
     
 }
 .ro-2 {
@@ -134,10 +139,4 @@ figure p {
 figure figcaption {
     color: var(--secondary-color);
     font-size: 0.9rem;
-}
-.ro-2 div>p {
-    color: var(--secondary-color);
-    text-align: center;
-    font-size: 2rem;
-    padding-top: var(--p-top);
 }
