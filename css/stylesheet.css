@@ -6,9 +6,9 @@
     --font-color: black;
 
 
-    --p-sides: 0.5rem;
-    --p-top: 0.5rem;
-    --p-bottom: 0.5rem;
+    --p-sides: 1rem;
+    --p-top: 2rem;
+    --p-bottom: 2rem;
 
     --img-width: 100%;
     --img-height: 100%;
@@ -43,15 +43,14 @@ body {
 .m-nav {
     padding-top: var(--p-top);
 }
-div.nav-width {
-    width: 100%;
-    height: 17rem;
-}
+
 .nav-width {
     background-image: url(../img/jayden-chong-DFqa4Fq5LNE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:  center;
+    background-position: center;
+    width: 100%;
+    height: 40vw;
 }
 .navbar-link {
 float: left;
@@ -63,10 +62,10 @@ ul.menu li{
 }
 ul.menu li a{
     display:flex;
-    padding: 5px;
+    padding: var(--p-top) var(--p-sides) var(--p-bottom) var(--p-sides);
     color: rgb(194, 15, 90);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     float: left; 
 }
@@ -75,21 +74,21 @@ ul.menu li a:hover{
 }
 .navbar-recht{
     float: right;
-    padding-right: 5%;
+    padding-right: var(--p-sides);
 }
 /*end navbar*/
 .p-h {
     color: var(--secondary-color);
     text-align: center;
-    
     padding-top: var(--p-top);
+    font-size: 4rem;
 }
 /*grid*/
 .g-container {
     display: grid;
     grid-template-columns: repeat(4,22vw) ;
     grid-template-rows: 35vw;
-    gap: 0.5rem;
+    gap: 1rem;
     text-align: center;
     align-items: center;
 }
@@ -118,35 +117,33 @@ ul.menu li a:hover{
     grid-row-end: 2; 
 }
 .g-container img {
-    width: 50%;
+    width: 40%;
     height: var(--img-height);
-    padding: 0.5rem;
-    border: 0.1rem solid var(--secondary-color);
+    padding: 1rem;
+    border: 0.3rem solid var(--secondary-color);
     border-radius: 50%;
     
 }
 .ro-2 {
     background-color: var(--primary-color);
-    padding-left: 3.5%;
+    padding: var(--p-top) 4.5% var(--p-bottom) 4.5%;
     
 }
 .bg-item {
     background-color: white;
-    border-top: 0.2rem solid var(--secondary-color);
+    border-top: 0.5rem solid var(--secondary-color);
     padding: var(--p-top) var(--p-sides) var(--p-bottom) var(--p-sides);
     box-shadow: 0 4px 8px 3px rgb(117, 117, 117);
 }
 figure p {
-    font-size: 0.7rem;
-    padding-top: var(--p-top);
-    padding-left: 1%;
-    padding-right: 1%;
+    font-size: 1.3rem;
+    padding-top: 0.2rem;
     text-align: center;
     font-style: italic;
 }
 figure figcaption {
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     padding-left: 1%;
     padding-right: 1%;
 }
@@ -156,69 +153,81 @@ figure figcaption {
     position: relative;
     transform: translate(50%, -5%);
     z-index: 1;
-    padding-left: 5px;
-    border-radius: 4px;  
+    padding-left: 1%;
+    border-radius: 2%;  
     margin-top: 3rem;
 }
 .bt {
  background-color: rgb(194, 15, 90);
  color: white;
- font-size: 0.5rem;
+ font-size: 1rem;
  border: none;
- border-radius: 20px;
+ border-radius: 30px;
  margin-left: 5%;
  margin-bottom: 5%;
- width: 30%;
- padding: 3px;
+ margin-top: 2%;
+ width: 25%;
+ padding: 2%;
 
 }
 .pbox1 {
     padding-left: 5%;
     color: var(--secondary-color);
     padding-bottom: 5%;
-    font-size: 15px;
+    font-size: 3rem;
+    padding-top: 5%;
 
 }
 .pbox2 {
     padding-left: 5%;
     padding-bottom: 2%;
-    font-size: 11px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 .img1 img {
     
-    width: 120px;
-    height: 150px;
+    width: 22%;
+    height: 25%;
     background: rgb(255, 255, 255);
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(-190%, -60%); 
+    transform: translate(-190%, -50%); 
 }
 .img2 img {
-    width: 200px;
-    height: 120px;
+    width: 50%;
+    height: 20%;
     background: rgb(255, 255, 255);
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(0%, -155%);  
+    transform: translate(-20%, -120%);  
 }
 .img3 img {
-    width: 160px;
-    height: 100px;
+    width: 32%;
+    height: 20%;
     background: rgb(255, 255, 255);
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(-80%, -210%);  
+    transform: translate(-75%, -210%);  
 }
 .img4 img {
-    width: 180px;
-    height: 100px;
+    width: 30%;
+    height: 250px;
     background: rgb(255, 255, 255);
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(10%, -270%);  
+    transform: translate(0, -300%);  
+}
+.ptext {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-left: 0.5rem solid var(--secondary-color);
+    width: 60%;
+    padding: 3%;
+    margin-left: 5%;
+    position: relative;
+    transform: translate(-5%, -410%);  
 }
