@@ -258,7 +258,7 @@ figure figcaption {
 .box-p1 {
     padding-left: 5%;
     color: var(--secondary-color);
-    padding-bottom: 5%;
+    padding-bottom: 2%;
     font-size: 3rem;
     padding-top: 5%;
 }
@@ -285,14 +285,43 @@ figure figcaption {
     top: 40%;
     left:50%;
     position: relative;
-    transform: translate(90%,-265%);  
-    
+    transform: translate(90%,-265%);    
 } 
-
 .img7 {
     width: 30%;
     top: 40%;
     left:50%;
     position: relative;
     transform: translate(-280%,-365%);    
+}
+.img8 {
+    width: 300px;
+    height:300px;
+    padding: 3%;
+}
+.img9 {
+    width: 300px;
+    height: 300px;
+    padding: 3%;
+}
+.img10 {
+    width: 100%;
+    height: 27%;
+}
+.ro-3 {
+    background-color: var(--primary-color);
+    padding: 5%;
+    width: 100%;
+    height: 130vw;
+    display: flex;
+}
+.flex-link {
+    float: left;
+    width: 50%;
+}
+.flex-recht {
+    float: right;
+    width: 50%;
+    margin-top: 5.5%;
+
 }
