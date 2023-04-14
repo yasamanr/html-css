@@ -1,0 +1,143 @@
+:root {
+    --primary-color: rgb(187, 187, 206);
+    --secondary-color: rgb(42, 109, 94);
+
+    --bek-color: rgb(181, 181, 195);
+    --font-color: black;
+
+    --bodytext: ;
+
+    --p-sides: 1rem;
+    --p-top: 1rem;
+    --p-bottom: 1rem;
+
+    --img-width: 100%;
+    --img-height: 100%;
+}
+
+/*var(--name)*/
+/* Basics: */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+/* HTML5-Elemente */
+header, main, nav, aside, article, footer, figure, figcaption {
+    display: block;
+    padding: 0;
+}
+/*general*/
+body {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--font-color);
+}
+/*nav-bar*/
+div.nav-width {
+    width: 100%;
+}
+.nav-width {
+    background-image: url(../img/jayden-chong-DFqa4Fq5LNE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+.navbar-link {
+float: left;
+}
+ul.menu li{
+    display: inline-block;
+    list-style: none;   
+}
+ul.menu li a{
+    display:flex;
+    padding: 5px;
+    color: rgb(151, 52, 52);
+    text-decoration: none;
+    font-size: var(--bodytext);
+    font-weight: bold;
+    float: left; 
+}
+ul.menu li a:hover{
+    color: rgb(0, 204, 255);
+}
+.navbar-recht{
+    float: right;
+    padding-right: 5%;
+}
+/*end navbar*/
+/*grid*/
+.g-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr) ;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: var(--p-top) var(--p-sides) 0 var(--p-sides);
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.gi-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.gi-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.gi-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.gi-4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.g-container img {
+    width: 40%;
+    height: var(--img-height);
+    
+    padding: 0.4rem;
+    border: 0.1rem solid var(--secondary-color);
+    border-radius: 100%;
+    
+}
+.ro-2 {
+    background-color: var(--primary-color);
+}
+.bg-item {
+    background-color: white;
+    border-top: 0.2rem solid var(--secondary-color);
+    padding: var(--p-top) var(--p-sides) var(--p-bottom) var(--p-sides);
+    box-shadow: 0 4px 8px 3px rgb(117, 117, 117);
+}
+figure p {
+    font-size: 0.8rem;
+    padding-top: var(--p-top);
+}
+figure figcaption {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+.ro-2 div>p {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    padding-top: var(--p-top);
+}
