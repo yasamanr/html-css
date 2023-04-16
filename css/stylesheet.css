@@ -336,8 +336,10 @@ figure figcaption {
 .text-auf-img img {
     width: 100%;
     height: 100%;
-    filter: contrast(50%);
-
+    filter: contrast(40%);
+    position: absolute;
+    transform: rotate(180deg);
+    transform: scalex(1.5);
 }
 .text-auf-img p {
     position: absolute;
