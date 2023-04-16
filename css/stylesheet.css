@@ -309,13 +309,13 @@ figure figcaption {
 }
 .img10 {
     width: 100%;
-    height: 27%;
+    height: 92%;
 }
 .ro-3 {
     background-color: var(--primary-color);
     padding: 5%;
     width: 100%;
-    height: 130vw;
+    height: 50vw;
     display: flex;
 }
 .flex-link {
@@ -327,4 +327,39 @@ figure figcaption {
     width: 50%;
     margin-top: 5.5%;
 
+}
+.text-auf-img {
+    width: 100%;
+    height: 40vw;
+    position: relative;
+}
+.text-auf-img img {
+    width: 100%;
+    height: 100%;
+    filter: contrast(50%);
+
+}
+.text-auf-img p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.text-auf-img button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bt3 {
+    background-color: rgb(194, 15, 90);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    width: 20%;
+    padding: 2%;    
 }
