@@ -399,6 +399,11 @@ figure figcaption {
 .form button {
     margin-top: 2rem;
 }
+.lbt {
+    width: 30%;
+    padding: 10px 10px;
+    font-size: 1rem;
+}
 footer {
     display: flex;
     width: 100%;
@@ -412,6 +417,7 @@ footer > div {
 footer > div > h4 {
     color: rgb(194, 15, 90);
     font-weight: bold;
+    
 }
 footer > div > p {
     font-weight: bold;
